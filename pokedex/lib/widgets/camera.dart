@@ -1,5 +1,6 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
+import 'package:tflite/tflite.dart';
 
 typedef void Callback(List<dynamic> list);
 
