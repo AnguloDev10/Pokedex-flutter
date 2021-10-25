@@ -25,6 +25,8 @@ dependencies:
   flutter:
     sdk: flutter
   camera: ^0.7.0+2
+  flare_flutter: ^2.0.1
+  flutter_tts: ^2.1.0
   image: ^2.1.19
   image_picker: ^0.6.7+22
   tflite: ^1.1.1
