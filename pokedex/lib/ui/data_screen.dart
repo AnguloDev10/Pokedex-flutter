@@ -1,4 +1,4 @@
-/*import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:pokedex/data/pokemon_data.dart';
 
 typedef Future<void> SpeakController(String say);
@@ -49,4 +49,4 @@ class _DataScreenState extends State<DataScreen> {
       ),
     );
   }
-}*/
+}

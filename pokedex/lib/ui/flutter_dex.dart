@@ -1,9 +1,8 @@
-/*import 'package:flare_flutter/flare_actor.dart';
+import 'package:flare_flutter/flare_actor.dart';
 import 'package:flutter/material.dart';
 import 'package:camera/camera.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import 'package:pokedex/ui/data_screen.dart';
-import 'package:pokedex/ui/sounds.dart';
 import 'package:pokedex/widgets/camera.dart';
 import 'package:smart_flare/actors/smart_flare_actor.dart';
 import 'package:smart_flare/smart_flare.dart';
@@ -61,7 +60,6 @@ class _FlareFlutterDexState extends State<FlareFlutterDex> {
     super.initState();
     _initializeVars();
     loadModel();
-    loadSounds();
     loadVoice();
   }
 
@@ -147,11 +145,10 @@ class _FlareFlutterDexState extends State<FlareFlutterDex> {
         break;
       case DATA:
         print("data");
-        playSound(RECOGNITION);
+       
         newDisplay = _data();
         break;
       case CAMERA:
-        playSound(OPEN_CAMERA);
         if (camera == null) {
           camera = Camera(setRecognitions, size);
         }
@@ -255,7 +252,6 @@ class _FlareFlutterDexState extends State<FlareFlutterDex> {
       height: 50,
       child: SmartFlareActor(
         filename: FLUTTER_DEX_FILE,
-        artboard: "red_button",
         width: 100,
         height: 50,
         activeAreas: [
@@ -281,7 +277,6 @@ class _FlareFlutterDexState extends State<FlareFlutterDex> {
       height: 50,
       child: SmartFlareActor(
         filename: FLUTTER_DEX_FILE,
-        artboard: "green_button",
         width: 100,
         height: 50,
         activeAreas: [
@@ -307,7 +302,6 @@ class _FlareFlutterDexState extends State<FlareFlutterDex> {
       height: 180,
       child: SmartFlareActor(
         filename: FLUTTER_DEX_FILE,
-        artboard: "arrows",
         height: 200,
         width: 200,
         activeAreas: [
@@ -343,7 +337,6 @@ class _FlareFlutterDexState extends State<FlareFlutterDex> {
       height: 100,
       child: SmartFlareActor(
         filename: FLUTTER_DEX_FILE,
-        artboard: "blue_button",
         startingAnimation: 'idle',
         width: 100,
         height: 100,
@@ -368,4 +361,4 @@ class _FlareFlutterDexState extends State<FlareFlutterDex> {
     );
     // !SECTION Starts UI definition
   }
-}*/
+}
