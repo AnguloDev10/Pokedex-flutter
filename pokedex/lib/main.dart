@@ -2,8 +2,7 @@ import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:pokedex/ui/flutter_dex.dart';
-
-
+import 'package:pokedex/ui/home_page.dart';
 
 List<CameraDescription> cameras;
 
@@ -25,7 +24,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     SystemChrome.setEnabledSystemUIOverlays([]);
     return MaterialApp(
-      home: FlareFlutterDex(cameras),
+      home: HomePage(),
     );
   }
 }

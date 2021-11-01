@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pokedex/widgets/Pokedex.dart';
+import 'package:pokedex/widgets/pokemon_card.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -11,7 +12,16 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Pokedex(
-        child: Container(),
+        child: Column(
+          children: [
+            Expanded(
+              flex: 3,
+              child: 
+                Pokemon_Card(),
+            ),
+            
+          ],
+        ),
       ),
     );
 
