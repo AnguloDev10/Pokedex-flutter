@@ -21,12 +21,11 @@ class _HomePageState extends State<HomePage> {
                 Pokemon_Card(),
             ),
             Expanded(child: Row(children: [
-              SizedBox(width: 133.0),
               
               PokemonSecondaryCard('OeYw991.png'),
               SizedBox(width: 20.0),
               PokemonSecondaryCard('WDr1JrI.png')
-            ],))
+            ],mainAxisAlignment: MainAxisAlignment.center,))
           ],
         ),
       ),
