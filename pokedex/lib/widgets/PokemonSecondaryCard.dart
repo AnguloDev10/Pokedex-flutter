@@ -1,6 +1,7 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:pokedex/main.dart';
+import 'package:pokedex/ui/capture_photo.dart';
 import 'package:pokedex/ui/detection_page.dart';
 import 'package:pokedex/ui/flutter_dex.dart';
 import 'package:pokedex/utils/colors.dart';
@@ -15,7 +16,7 @@ class PokemonSecondaryCard extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (BuildContext context) => FlareFlutterDex(cameras),
+            builder: (BuildContext context) => CamerPicker(),
           ),
         );
       },

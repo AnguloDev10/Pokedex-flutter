@@ -22,7 +22,7 @@ const String ANIMATION_LIGHTS = "blue_light";
 // NOTE Rive File with UI
 const String FLUTTER_DEX_FILE = "assets/FlutterDex.flr";
 // NOTE TensorFlowLite Model
-const String TFLITE_MODEL = "assets/converted_tflite/model_unquant.tflite";
+const String TFLITE_MODEL = "assets/converted_tflite/pokemon_cnnfinal.tflite";
 const String TFLITE_LABELS = "assets/converted_tflite/labels.txt";
 //const String TFLITE_MODEL = "assets/pokedex.tflite";
 // const String TFLITE_LABELS = "assets/pokedex.txt";
@@ -129,14 +129,14 @@ class _FlareFlutterDexState extends State<FlareFlutterDex> {
     });
   }
 
-  // NOTE Data Backed?
+  
   Widget _data() {
     // Pokemon at index
     int pokemonIndex = _pokemonDetected['index'];
     return DataScreen(pokemonIndex, speak, _endDataInteraction);
   }
 
-  // NOTE Load Display Content
+ 
   Widget _loadDisplay(double size) {
     Widget newDisplay;
     switch (_display) {
@@ -159,9 +159,7 @@ class _FlareFlutterDexState extends State<FlareFlutterDex> {
     }
     return newDisplay;
   }
-  // !SECTION
 
-  // SECTION APPLICATION UI DEFINITION
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -222,7 +220,7 @@ class _FlareFlutterDexState extends State<FlareFlutterDex> {
     );
   }
 
-  // NOTE Widget que dibuja el marco de la pantalla y su contenido
+ 
   Widget _displayFrame() {
     return Stack(
       children: <Widget>[
@@ -330,7 +328,6 @@ class _FlareFlutterDexState extends State<FlareFlutterDex> {
     );
   }
 
-  // NOTE Blue Button
   Widget _blueButton() {
     return Container(
       width: 100,
@@ -359,6 +356,6 @@ class _FlareFlutterDexState extends State<FlareFlutterDex> {
         ],
       ),
     );
-    // !SECTION Starts UI definition
+
   }
 }
